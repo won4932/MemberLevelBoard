@@ -1,0 +1,321 @@
+
+@charset "utf-8";
+
+/* 전체 옵션 */
+* {
+	margin: 0 auto;
+	padding: 0;
+	font-family: 'Malgun gothic','Sans-Serif','Arial';
+}
+a {
+	text-decoration: none;
+	color:#333;
+}
+ul li {
+	list-style:none;
+}
+
+/* 공통 */
+.fl {
+	float:left;
+}
+.tc {
+	text-align:center;
+}
+
+/* 게시판 목록 */
+#boardArea {
+	left: 30px;
+	width: 700px;
+	position: absolute;
+}
+#memInfo {
+	position: absolute;
+	right: 0;
+	
+}
+#memInfo > form > ul > li {
+	float:left; margin: 10px;
+}
+#boardList {
+	position: absolute;
+	left: 30px;
+	font-size:14px;
+	top:90px;
+	line-height: 30px;
+}
+
+.listTable {
+	left: 150px;
+	margin-top: 50px;
+	position: relative;
+}
+.listTable thead th{
+	height:40px;
+	border-top:2px solid #09C;
+	border-bottom:1px solid #CCC;
+	font-weight: bold;
+	font-size: 17px;
+}
+.listTable tbody td{
+	text-align:center;
+	padding:10px 0;
+	border-bottom:1px solid #CCC; height:20px;
+	font-size: 14px 
+}
+#writeBtn {
+	position: absolute;
+	margin-top:0px;
+	right: 0;
+}
+.reCount {font-weight:bold; color:blue;}
+#pageNum {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 10px;
+}
+#pageNum a {
+	margin-left: 15px; 
+}
+.foRe {
+	font-weight: bold;
+	color:red;
+	margin-left: 15px; 
+}
+#searchBox {
+	margin-top:10px;
+	text-align: center;
+}
+#searchBox2 {
+	text-align: center;
+	margin-top: 10px;
+	
+}
+#notUse {
+	text-align: center;
+	margin-top: 100px;
+}
+
+/* 회원가입 */
+#joinFormIn {
+	width:700px;
+	height:600px;
+	margin-top:150px;
+	background: white;
+}
+#joinF {
+	margin-left: 50px; 
+	margin-top:50px; 
+}
+.formGroup {
+	margin-bottom: 40px; 
+	margin-left: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	height:30px;
+	padding:5px 10px;
+	font-size:14px;
+}
+.mb {
+	margin-top:10px; 
+}
+.input {
+	padding: 0 0 0 10px;
+	font-size:12px;
+	border-radius: 10px;
+	border:solid 1px #D8D8D8;
+	width: 450px; 
+	height: 35px; 
+}
+.inp:focus {
+	box-shadow: 1px 1px 10px 1px #00BFFF;
+	transition: 0.5s;
+}
+.formBtn {
+	margin-top:70px; 
+	margin-left: 200px; 
+}
+.joinBtn {
+	padding:10px 20px 10px 20px;
+	background: #58D3F7;
+	border: 0px;
+	color:white;
+}
+.joinBtn:hover {
+	background: #01A9DB;
+}
+.resetBtn {
+	margin-left: 30px;
+	padding: 10px 20px 10px 20px;
+	background: #FFBF00;
+	border: 0;
+	color:white;
+	font-size: 12px;
+}
+.resetBtn a {
+	color:white;
+}
+.resetBtn:hover {
+	background: #DBA901;
+}
+
+/* 게시판 글쓰기 */
+#boardWrite {
+	width:900px;
+	position:relative;
+	margin:0 auto;
+}
+#writeArea {
+	margin-top:70px;
+	font-size:14px;}
+#inName {
+	margin-top:30px;
+}
+#inName textarea {
+	font-weight:bold;
+	font-size:26px;
+	color:#333;
+	width: 900px;
+	border:none;
+	resize: none;
+}
+#inTitle {
+	margin-top:30px;
+}
+#inTitle textarea {
+	font-weight:bold;
+	font-size:26px;
+	color:#333;
+	width: 900px;
+	border:none;
+	resize: none;
+}
+.writeLine {
+	border:solid 1px lightgray;
+	margin-top:10px;
+}
+#inContent {
+	margin-top:10px;
+}
+#inContent textarea {
+	font:14px;
+	color:#333;
+	width: 900px;
+	height: 400px;
+	resize: none;
+}
+#inPw input {
+	font:14px;
+	margin-top:10px;
+}
+.btnInsert {
+	margin-top:20px;
+	text-align:center;
+}
+.btnInsert button {
+	width:100px;
+	height:30px;
+}
+#inLock {
+	margin-top:10px;
+}
+#inFile {
+	margin-top:10px;
+	overflow: hidden;
+}
+
+/* 게시판 read */
+#boardRead {
+	width:900px;
+	position: relative;
+	word-break:break-all;
+}
+#userInfo {
+	font-size:14px;
+}
+#userInfo ul li {
+	float:left;
+	margin-left:10px;
+}
+#boLine {
+	width:900px;
+	height:2px;
+	background: gray;
+	margin-left: 0;
+	margin-top:20px;
+}
+#boContent {
+	margin-top:20px;
+}
+#boSer {
+	font-size:14px;
+	color:#333;
+	position: absolute;
+	right: 20px;
+}
+#boSer > ul > li {
+	float:left;
+	margin-left:10px;
+}
+
+/* 댓글 */
+.replyView {
+	width:900px;
+	margin-top:100px; 
+	word-break:break-all;
+}
+.dapLo {
+	font-size: 14px;
+	padding:10px 0 15px 0;
+	border-bottom: solid 1px gray;
+}
+.dapTo {
+	margin-top:5px;
+}
+.repMe {
+	font-size:12px;
+}
+.repMe ul li {
+	float:left;
+	width: 30px;
+}
+.datDelete {
+	display: none;
+}	
+.datEdit {
+	display:none;
+}
+.dapPw {
+	position: absolute;
+	top: 10px;
+}
+.dapEditText{
+	width:520px;
+	height:70px;
+	position: absolute;
+	top: 40px;
+}
+.reModifyBtn {
+	position: absolute;
+	top:40px;
+	right: 5px;
+	width: 90px;
+	height: 72px;
+}
+#reContent {
+	width:700px;
+	height: 56px; 
+}
+.dapInsert {
+	margin-top:50px;
+}
+.repBtn {
+	position: absolute;
+	width:100px;
+	height:56px;
+	font-size:16px;
+	margin-left: 10px; 
+}
+#footBox {
+	height: 50px; 
+}
